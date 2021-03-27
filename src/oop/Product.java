@@ -12,13 +12,12 @@ import java.util.ArrayList;
  * @author Archi
  */
 public class Product {
+    ///a product contains following information
     private int productName;
-    //int productId;
     private int buyPrice;
     private int sellPrice;
     private int availableNumber;
     private int profit;
-    //int availableBalance;
     
     
     public Product(int productName, int buyPrice, int sellPrice, int availableNumber, int profit)
@@ -27,38 +26,36 @@ public class Product {
             this.buyPrice=buyPrice;
             this.sellPrice=sellPrice;
             this.availableNumber=availableNumber;
-            //this.profit=profit;
-            profit=0;
+            profit=0; ///initially profit will be zero
     }
     
 
     public int getProductName(){
-        return productName;
+        return productName;  ///returns name of the product
     }
     
 
     public int getBuyPrice(){
-        return buyPrice;
+        return buyPrice;  ///returns the buying price of the product
     }
     
 
     public int getSellPrice(){
-        return sellPrice;
+        return sellPrice;  ///returns the selling price of the product
     }
     
     public void setAvailableNumber(int c){
-        //this.availableNumber=availableNumber;
-        availableNumber+=c;
+        availableNumber+=c;   ///given the quantity of products that are bought or sold, updates the available number of the product 
     }
     public int getAvailableNumber(){
-        return availableNumber;
+        return availableNumber;  ///returns the current available number of the product 
     }
     
     public void setProfit(int n){
-        profit+=n;
+        profit+=n;  ///given the profit made from the product, total profit is updated
     }
     public int getProfit(){
-        return profit;
+        return profit;  ///returns the total profit for the product
     }
     
     
